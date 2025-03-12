@@ -1,7 +1,9 @@
-$black: '#000000';
-$red: '#AE1332';
-$green: '#A4CB66';
-$yellow: '#F5CE13';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+$black: #000000;
+$red: #AE1332;
+$green: #A4CB66;
+$yellow: #F5CE13;
 
 /*Обнуление*/
 * {
@@ -95,3 +97,35 @@ h6 {
 }
 
 /*--------------------*/
+
+body {
+    background-color: $red;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.header {
+    color: $red;
+    background-color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    padding: 16px 0;
+
+    &__items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+}
