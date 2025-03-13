@@ -5,6 +5,8 @@ $red: #AE1332;
 $green: #A4CB66;
 $yellow: #F5CE13;
 
+$font-family: "DM Sans", sans-serif;
+
 /*Обнуление*/
 * {
     padding: 0;
@@ -110,7 +112,7 @@ body {
 .header {
     color: $red;
     background-color: white;
-    font-family: "DM Sans", sans-serif;
+    font-family: $font-family;
     font-size: 14px;
     font-weight: 400;
 
