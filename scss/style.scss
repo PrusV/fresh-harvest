@@ -131,3 +131,205 @@ body {
         gap: 20px;
     }
 }
+
+.welcome-screen {
+    position: relative;
+    margin-top: 5vh;
+
+    & .container {
+        max-width: 1500px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__header {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 64px;
+        color: white;
+        text-transform: uppercase;
+
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-inline: auto;
+        width: fit-content;
+        text-align: center;
+
+        max-width: 900px;
+    }
+
+    &__left {
+        margin-top: 20vh;
+    }
+
+    &__right {
+        margin-top: 15vh;
+    }
+
+    &__center {
+        position: relative;
+
+        margin-top: 60px;
+
+        // background-image: url("../img/border.svg");
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: -200px;
+            top: 90px;
+            width: 184px;
+            height: 125px;
+            background-image: url("../img/banan.png");
+            background-size: contain;
+            transform: rotate(20deg);
+            filter: blur(3px);
+            z-index: -2;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: -171px;
+            top: -100px;
+            width: 120px;
+            height: 120px;
+            background-image: url("../img/strawbery.png");
+            background-size: contain;
+            transform: rotate(20deg);
+            filter: blur(3px);
+            z-index: -2;
+        }
+    }
+
+    &__text {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+        color: white;
+        width: 220px;
+        margin-bottom: 45px;
+    }
+
+    &__main-image {
+        border-radius: 500px;
+        width: 452px;
+        height: 702px;
+
+        object-fit: cover;
+        object-position: 60%;
+
+        position: relative;
+        z-index: -1;
+
+        vertical-align: baseline;
+
+    }
+
+    &__round-block {
+        &--right {
+            background-color: $yellow;
+
+            &>img {
+                width: 162px;
+                height: 185px;
+            }
+        }
+
+        &--left {
+            background-color: $green;
+
+            &>img {
+                width: 200px;
+                height: 172px;
+            }
+        }
+    }
+
+
+    &__shop-button {
+        width: 114px;
+        height: 114px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -35px;
+        left: 50%;
+        transform: translateX(-50%) rotate(-14deg);
+
+        &:hover>* {
+            color: $green;
+        }
+
+        &:active {
+            filter: grayscale(1);
+        }
+    }
+
+    &__button-text {
+        transition: all 0.3s;
+
+        font-family: $font-family;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 28px;
+        color: $red;
+    }
+
+    &__hashtags {
+        display: flex;
+        justify-content: end;
+        flex-wrap: wrap;
+        width: 276px;
+        gap: 8px;
+        margin-top: 45px;
+        margin-right: -27px;
+    }
+
+    &__hashtag {
+        border: 1px solid #fff;
+        border-radius: 1000px;
+        padding: 12px 32px;
+
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+.round-block {
+    border-radius: 500px;
+    width: 249px;
+    height: 387px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    color: white;
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 117%;
+    text-transform: uppercase;
+
+    &__image {
+        // width: 200px;
+        // height: 172px;
+    }
+
+    &__text {
+        max-width: 155px;
+        text-align: center;
+    }
+}
