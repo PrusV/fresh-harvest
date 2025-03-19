@@ -12,6 +12,7 @@ $font-family: "DM Sans", sans-serif;
     padding: 0;
     margin: 0;
     border: 0;
+
 }
 
 *,
@@ -96,6 +97,18 @@ h5,
 h6 {
     font-size: inherit;
     font-weight: inherit;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }
 
 /*--------------------*/
@@ -758,4 +771,155 @@ body {
         }
     }
 
+}
+
+.popup {
+    display: none;
+
+    border-radius: 20px;
+    width: 891px;
+    background-color: #fff;
+    padding: 40px;
+    position: relative;
+
+    &__header {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 110%;
+        text-transform: uppercase;
+        color: $red;
+        margin-bottom: 40px;
+    }
+
+    &__cross {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    &__basket-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        margin-bottom: 40px;
+    }
+
+    &__basket-item {
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px 10px 10px 20px;
+        position: relative;
+
+        &--strawberry {
+            background-color: #f8766b;
+        }
+
+        &--apple {
+            background-color: #edd251;
+        }
+
+        &--fruits {
+            background-color: #9dc262;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 196px;
+        object-fit: contain;
+    }
+
+    &__checkbox {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    &__basket-name {
+        font-family: $font-family;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 117%;
+        color: #fff;
+        margin-bottom: 8px;
+    }
+
+    &__basket-type {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+
+        color: #fff;
+    }
+
+    &__form {
+        background-image: url('../img/woman-without-bg.png');
+
+
+        &>button {
+            padding: 15px 35px;
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 129%;
+            letter-spacing: -0.04em;
+            text-transform: capitalize;
+            color: #fff;
+            border-radius: 100px;
+            background-color: #9dc162;
+        }
+    }
+
+    &__inputs-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        &>input,
+        &>textarea {
+            border: 1px solid #bbb9b9;
+
+            border-radius: 100px;
+            width: 360px;
+            padding: 15px 24px;
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 129%;
+            color: black;
+
+            &::placeholder {
+                font-family: $font-family;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 129%;
+
+                color: #bbb9b9;
+
+            }
+        }
+
+        &>textarea {
+            border-radius: 20px;
+            resize: none;
+
+        }
+
+        margin-bottom: 20px;
+    }
+
+
+}
+
+.thank-popup {
+    display: none;
+}
+
+.fade {
+    display: none;
 }

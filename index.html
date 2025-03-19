@@ -179,7 +179,7 @@
                 <input type="checkbox" name="" id="" class="popup__checkbox">
                 <div class="popup__text-wrapper">
                     <h2 class="popup__basket-name">Strawberry Basket</h2>
-                    <div class="popup__basket-type">Plant</div>
+                    <p class="popup__basket-type">Plant</p>
                 </div>
                 <img src="img/strawberry-basket.png" alt="Strawberry Basket" class="popup__image">
             </div>
@@ -188,7 +188,7 @@
                 <div class="popup__text-wrapper">
 
                     <h2 class="popup__basket-name">Apple Basket</h2>
-                    <div class="popup__basket-type">Plant</div>
+                    <p class="popup__basket-type">Plant</p>
                 </div>
                 <img src="img/apple-basket.png" alt="Apple Basket" class="popup__image">
             </div>
@@ -197,16 +197,19 @@
                 <div class="popup__text-wrapper">
 
                     <h2 class="popup__basket-name">Fruits Basket</h2>
-                    <div class="popup__basket-type">Plant</div>
+                    <p class="popup__basket-type">Plant</p>
                 </div>
                 <img src="img/fruits-basket.png" alt="Fruits Basket" class="popup__image">
             </div>
         </div>
-        <form action="get" class="popup__form">
-            <input type="text" placeholder="Enter full name...">
-            <input type="email" placeholder="Enter email...">
-            <input type="number" placeholder="Enter card..">
-            <textarea name="" id="" placeholder="Enter comments..."></textarea>
+        <form action="/" method="get" class="popup__form">
+            <div class="popup__inputs-wrapper">
+
+                <input type="text" placeholder="Enter full name...">
+                <input type="email" placeholder="Enter email...">
+                <input type="number" placeholder="Enter card..">
+                <textarea rows="7" name="" id="" placeholder="Enter comments..."></textarea>
+            </div>
             <button>Submit</button>
         </form>
     </div>
