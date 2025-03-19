@@ -166,6 +166,59 @@
             </button>
         </div>
     </section>
+
+    <div class="popup">
+        <h1 class="popup__header">Your order</h1>
+        <svg class="popup__cross" width="28" height="28" viewBox="0 0 28 28" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 7L7 21" stroke="#AE1332" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M7 7L21 21" stroke="#AE1332" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <div class="popup__basket-list">
+            <div class="popup__basket-item">
+                <input type="checkbox" name="" id="" class="popup__checkbox">
+                <h2 class="popup__basket-name">Strawberry Basket</h2>
+                <div class="popup__basket-type">Plant</div>
+                <img src="img/strawberry-basket.png" alt="Strawberry Basket" class="popup__image">
+            </div>
+            <div class="popup__basket-item">
+                <input type="checkbox" name="" id="" class="popup__checkbox">
+                <h2 class="popup__basket-name">Apple Basket</h2>
+                <div class="popup__basket-type">Plant</div>
+                <img src="img/apple-basket.png" alt="Apple Basket" class="popup__image">
+            </div>
+            <div class="popup__basket-item">
+                <input type="checkbox" name="" id="" class="popup__checkbox">
+                <h2 class="popup__basket-name">Fruits Basket</h2>
+                <div class="popup__basket-type">Plant</div>
+                <img src="img/fruits-basket.png" alt="Fruits Basket" class="popup__image">
+            </div>
+        </div>
+        <form action="get" class="popup__form">
+            <input type="text" placeholder="Enter full name...">
+            <input type="email" placeholder="Enter email...">
+            <input type="number" placeholder="Enter card..">
+            <textarea name="" id="" placeholder="Enter comments..."></textarea>
+            <button>Submit</button>
+        </form>
+    </div>
+    <div class="fade"></div>
+
+    <div class="thank-popup">
+        <svg class="thank-popup__cross" width="28" height="28" viewBox="0 0 28 28" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 7L7 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M7 7L21 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <img src="img/raspberry.png" alt="Raspberry" class="thank-popup__image">
+        <h2 class="thank-popup__header">Thank you</h2>
+        <p class="thank-popup__text">
+            Thank you for your order! Our team is preparing your box with fresh, delicious fruits and vegetables, and
+            we'll deliver it straight to your doorstep. We appreciate your business and look forward to providing you
+            with the best possible experience!
+        </p>
+    </div>
+
     <section class="send-mail">
         <div class="container">
             <h1 class="send-mail__header">Fresh Harvest Box has got you covered</h1>
