@@ -774,7 +774,10 @@ body {
 }
 
 .popup {
-    display: none;
+    // display: none;
+    background-image: url('../img/woman-without-bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
 
     border-radius: 20px;
     width: 891px;
@@ -833,10 +836,35 @@ body {
         object-fit: contain;
     }
 
+    &__hidden-checkbox {
+        appearance: none;
+        opacity: 0;
+        display: none;
+
+        &:checked+.popup__custom-checkbox::after {
+            content: url("../img/pick.svg");
+            position: absolute;
+            top: 0;
+            left: 0;
+            translate: 50%;
+        }
+    }
+
+    &__custom-checkbox {
+        width: 20px;
+        height: 20px;
+        border: 1.5px solid #fff;
+        border-radius: 4px;
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+    }
+
+
     &__checkbox {
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 14px;
+        right: 14px;
     }
 
     &__basket-name {
@@ -858,7 +886,6 @@ body {
     }
 
     &__form {
-        background-image: url('../img/woman-without-bg.png');
 
 
         &>button {
@@ -917,9 +944,14 @@ body {
 }
 
 .thank-popup {
-    display: none;
+    // display: none;
+
 }
 
 .fade {
+    display: none;
+}
+
+.hide {
     display: none;
 }
