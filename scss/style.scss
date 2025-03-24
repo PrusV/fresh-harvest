@@ -774,7 +774,7 @@ body {
 }
 
 .popup {
-    // display: none;
+    display: none;
     background-image: url('../img/woman-without-bg.png');
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -783,7 +783,11 @@ body {
     width: 891px;
     background-color: #fff;
     padding: 40px;
-    position: relative;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
 
     &__header {
         font-family: $font-family;
