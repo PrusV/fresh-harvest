@@ -1,0 +1,42 @@
+$black: #000000;
+$red: #AE1332;
+$green: #A4CB66;
+$yellow: #F5CE13;
+
+$font-family: "DM Sans", sans-serif;
+
+.header {
+    color: $red;
+    background-color: white;
+    font-family: $font-family;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+
+    padding: 11px 0;
+
+    &__items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+    }
+
+    &__link>a {
+        color: $red;
+    }
+
+    &__logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
