@@ -949,7 +949,53 @@ body {
 
 .thank-popup {
     // display: none;
+    border-radius: 20px;
+    width: 600px;
+    height: 545px;
+    background: #e03f5e;
+    padding: 70px 105px;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+    &__cross {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    &__image {
+        width: 278px;
+        height: 239px;
+    }
+
+    &__header {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 110%;
+
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    &__text {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+
+        text-align: center;
+        color: #fff;
+    }
 }
 
 .fade {
