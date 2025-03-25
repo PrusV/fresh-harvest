@@ -29,8 +29,29 @@ $font-family: "DM Sans", sans-serif;
 
     }
 
-    &__link>a {
-        color: $red;
+    &__link {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: -1px;
+            transition: all .3s;
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: $red;
+        }
+
+        &:hover::before {
+            width: 100%;
+        }
+
+        &>a {
+            color: $red;
+        }
+
     }
 
     &__logo {

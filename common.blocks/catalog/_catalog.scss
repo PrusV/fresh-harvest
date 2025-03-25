@@ -109,7 +109,11 @@ $font-family: "DM Sans", sans-serif;
         height: 251px;
         display: block;
         margin: 0 auto;
+        transition: transform .25s cubic-bezier(.4, 0, .2, 1);
 
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     &__price {

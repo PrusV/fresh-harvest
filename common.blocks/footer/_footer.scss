@@ -45,8 +45,29 @@ $font-family: "DM Sans", sans-serif;
         gap: 20px;
     }
 
-    &__link>a {
-        color: $red;
+    &__link {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: -1px;
+            transition: all .3s;
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: $red;
+        }
+
+        &:hover::before {
+            width: 100%;
+        }
+
+        &>a {
+            color: $red;
+        }
+
     }
 
     &__right {
@@ -73,8 +94,13 @@ $font-family: "DM Sans", sans-serif;
         display: flex;
         justify-content: space-between;
         width: 100%;
+        transition: all 0.3s;
 
-        &>img:hover {
+        & img {
+            transition: all 0.3s;
+        }
+
+        & img:hover {
             border-radius: 10px;
             background: rgba(174, 19, 50, 0.1);
         }
