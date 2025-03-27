@@ -6,6 +6,7 @@
 @use "../common.blocks/send-mail/send-mail";
 @use "../common.blocks/footer/footer";
 @use "../common.blocks/popup/popup";
+@use "../common.blocks/menu-bar/menu-bar";
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
@@ -19,9 +20,31 @@ $font-family: "DM Sans", sans-serif;
 body {
     background-color: $red;
     scroll-behavior: smooth;
+
+    &.mobile-menu {
+        overflow: hidden;
+    }
 }
 
 .container {
     max-width: 1400px;
     margin: 0 auto;
+}
+
+@media (max-width:1500px) {
+    .container {
+        max-width: 1200px !important;
+    }
+}
+
+@media (max-width:1300px) {
+    .container {
+        max-width: 700px !important;
+    }
+}
+
+@media (max-width:800px) {
+    .container {
+        max-width: 370px !important;
+    }
 }

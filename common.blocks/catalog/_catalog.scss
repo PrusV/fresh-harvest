@@ -165,3 +165,33 @@ $font-family: "DM Sans", sans-serif;
         background-color: #98B37E;
     }
 }
+
+@media (max-width:1300px) {
+    .catalog {
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+    }
+
+    .list-item {
+        width: 345px;
+
+        &:last-child {
+            display: none;
+        }
+    }
+}
+
+@media (max-width:800px) {
+    .catalog {
+        &__header {
+            font-size: 28px;
+        }
+
+        &__list {
+            grid-template-columns: 1fr;
+        }
+    }
+
+}

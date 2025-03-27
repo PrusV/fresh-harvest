@@ -109,3 +109,41 @@ $font-family: "DM Sans", sans-serif;
         }
     }
 }
+
+@media (max-width:1300px) {
+    .send-mail {
+        &__images {
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        &__image-2 {
+            max-width: 350px;
+            object-fit: cover;
+        }
+
+        &__header {
+            font-size: 54px;
+            top: -79px;
+        }
+    }
+}
+
+@media (max-width:800px) {
+    .send-mail {
+        &__header {
+            font-size: 32px;
+            top: -53px;
+            width: 335px;
+        }
+
+        &__images {
+            gap: 0;
+        }
+
+
+        &__image-2 {
+            display: none;
+        }
+    }
+}

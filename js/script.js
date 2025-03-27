@@ -6,6 +6,11 @@ const popupCross = document.querySelector(".popup__cross")
 const popupForm = document.querySelector(".popup__form")
 const thankPopupCross = document.querySelector(".thank-popup__cross")
 
+const hamburger = document.querySelector(".header__hamburger-icon")
+const menuMobile = document.querySelector(".menu-bar")
+const hamburgerCross = document.querySelector(".header__hamburger-cross")
+const hamburgerNormal = document.querySelector(".header__hamburger-normal")
+
 
 orderButton.addEventListener("click", togglePopup)
 
@@ -26,4 +31,12 @@ popupForm.addEventListener("submit", event => {
 thankPopupCross.addEventListener("click", () => {
     thankPopup.classList.add("hide")
     fadeElem.classList.add("hide")
+})
+
+hamburger.addEventListener("click", () => {
+    menuMobile.classList.toggle("menu-bar--active")
+    document.body.classList.toggle("mobile-menu")
+
+    hamburgerCross.classList.toggle("hide")
+    hamburgerNormal.classList.toggle("hide")
 })
