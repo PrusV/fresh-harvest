@@ -1,5 +1,7 @@
 # Fresh Harvest
 
+🔗 **Live Demo:** [Fresh Harvest](https://prusv.github.io/fresh-harvest/)
+
 ## 🌿 Project Overview
 
 **Fresh Harvest** is a web project designed to promote fresh produce and healthy eating. It offers users an engaging interface to explore various fruits, vegetables, and recipes, emphasizing the benefits of a nutritious diet.
